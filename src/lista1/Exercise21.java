@@ -1,3 +1,5 @@
+package lista1;
+
 import static java.lang.Math.sqrt;
 
 public class Exercise21 {
