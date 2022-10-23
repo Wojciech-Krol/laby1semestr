@@ -8,7 +8,7 @@ public class E extends Main{
             k=19;
         }
         if(x>35){
-            System.out.println("UWAGA! Wyniki przy obliczaniu e mogą być zakłamane, gdyż wartości mogą wyjść poza zakres");
+            System.out.println("UWAGA! Wyniki przy obliczaniu e^x dla x>35 mogą być zakłamane, gdyż wartości mogą wyjść poza zakres");
         }
         this.x=x;
         this.k=k;
