@@ -1,2 +1,2 @@
-# laby1semestr
-kody z labow 1semestr
+# Laby PSiO 1 semestr
+Projekt, z rozwiązaniami zadań z labo z PSiO z 1 semestru IST na Politechnice Wrocławskiej.
