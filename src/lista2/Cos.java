@@ -11,8 +11,8 @@ public class Cos extends Main{
         while(x<-Math.PI){
             x+=Math.PI*2;
         }
-        if(k>6) {
-            k = 6;
+        if(k>8) {
+            k = 8;
         }
         this.x=x;
         this.k=k;

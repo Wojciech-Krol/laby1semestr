@@ -32,8 +32,6 @@ class Main {
         System.out.println(calculateE.E_x_WK());
         System.out.println(calculateSin.Sin_x_WK());
         System.out.println(calculateCos.Cos_x_WK());
-        System.out.println(Long.MAX_VALUE);
     }
-
 
 }
