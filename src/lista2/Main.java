@@ -24,14 +24,20 @@ class Main {
     }
 
     public static void main(String[] args){
-        double x=35;
-        int k=30;
-        E calculateE = new E((int)x,k);
+        double x=150;
+        int k=8;
+        System.out.println(Pow(2,1000));
+        E calculateE = new E((int)3,k);
         Sin calculateSin = new Sin(x,k);
         Cos calculateCos = new Cos(x,k);
-        System.out.println(calculateE.E_x_WK());
-        System.out.println(calculateSin.Sin_x_WK());
-        System.out.println(calculateCos.Cos_x_WK());
+        System.out.println("Wartości z zad4:");
+        System.out.println("Wartość e^"+3+"= "+calculateE.E_x_WK_zad4());
+        System.out.println("Wartość sin("+x+")= "+calculateSin.Sin_x_WK_zad4());
+        System.out.println("Wartość cos("+x+")= "+calculateCos.Cos_x_WK_zad4());
+        System.out.println("Wartości z zad3:");
+        System.out.println("Wartość e^"+3+"= "+calculateE.E_x_WK_zad3());
+        System.out.println("Wartość sin("+x+")= "+calculateSin.Sin_x_WK_zad3());
+        System.out.println("Wartość cos("+x+")= "+calculateCos.Cos_x_WK_zad3());
     }
 
 }

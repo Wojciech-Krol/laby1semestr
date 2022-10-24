@@ -13,10 +13,24 @@ public class E extends Main{
         this.x=x;
         this.k=k;
     }
-    public double E_x_WK(){
+    public double E_x_WK_zad3(){
         double answer=1;
-        for(int i=1;i<=k;i++){
+        double licznik=1;
+        double mianownik=1;
+
+        for(int i=1;i<=k;i++){ //mniejsza dokladnosc, mniej mnozen, szybciej wychodzi poza zakres longa
+            licznik*=x;
+            mianownik*=i;
+            answer+=licznik/mianownik;
+        }
+        return answer;
+    }
+    public double E_x_WK_zad4(){
+        double answer=1;
+        for(int i=1;i<=k;i++){ //dokladniejszy algorytm, ale wiecej mnozen, pozniej wychodzi poza zakres longa
+            //answer+=Pow(x,i)/(double)Factorial(i); <-- "wzor" z wykladu
             answer+=1/(double)Factorial(i);
+
         }
         return Pow(answer,x);
     }
