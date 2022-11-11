@@ -1,9 +1,7 @@
 package lista3;
-import java.util.Random;
 
 
-
-public class Main {
+public class Main{
     public static void wypiszKompaktowo(tablica1Wymiar t){
         System.out.println("Elementy tablicy od lewej: ");
         t.wypiszTabliceOdLewej();
@@ -11,6 +9,12 @@ public class Main {
         t.wypiszTabliceOdPrawej();
         System.out.println("Maksimum: "+t.znajdzMaksimum());
         System.out.println("Minimum: "+t.znajdzMinimum());
+    }
+    public static void wypiszKompaktowo(Macierz m){
+        System.out.println("Elementy macierzy ");
+        m.wypiszMacierz();
+        System.out.println("Maksimum: "+m.znajdzMaksimum());
+        System.out.println("Minimum: "+m.znajdzMinimum());
     }
 
     public static void main(String[] args) {
@@ -24,6 +28,16 @@ public class Main {
         System.out.println("Nieparzyste: ");
         tablica1Wymiar nieparzyste=tab.getNieparzyste();
         wypiszKompaktowo(nieparzyste);
+        Macierz m1 = new Macierz(4,4);
+        Macierz m2 = new Macierz(4,8);
+        m1.uzupelnijNaturalnymiLiczbamiLosowymi(100);
+        m2.uzupelnijNaturalnymiLiczbamiLosowymi(100);
+        wypiszKompaktowo(m1);
+        wypiszKompaktowo(m2);
+        m1.dodajMacierz(m2);
+        wypiszKompaktowo(m1);
+        m1.mnozPrzezMacierz(m2);
+        wypiszKompaktowo(m1);
     }
 }
 

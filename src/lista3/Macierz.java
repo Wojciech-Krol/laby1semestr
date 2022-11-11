@@ -61,5 +61,31 @@ public class Macierz {
         }
         return macierz[wiersz][kolumna];
     }
-    public int getWiers
+    public void dodajMacierz(Macierz m){
+        if(m.wiersze!=this.wiersze || m.kolumny!=this.kolumny){
+            System.out.println("Niepoprawne wymiary macierzy");
+            return;
+        }
+        for(int i=0;i<wiersze;i++){
+            for(int j=0;j<kolumny;j++){
+                this.macierz[i][j]+=m.macierz[i][j];
+            }
+        }
+    }
+    public void mnozPrzezMacierz(Macierz m){
+        if(this.kolumny!=m.wiersze){
+            System.out.println("Niepoprawne wymiary macierzy");
+            return;
+        }
+        int nowaMacierz[][]=new int[this.wiersze][m.kolumny];
+        for(int i=0;i<this.wiersze;i++){
+            for(int j=0;j<m.kolumny;j++){
+                for(int k=0;k<this.kolumny;k++){
+                    nowaMacierz[i][j]+=this.macierz[i][k]*m.macierz[k][j];
+                }
+            }
+        }
+        this.macierz=nowaMacierz;
+        this.kolumny=m.kolumny;
+    }
 }
