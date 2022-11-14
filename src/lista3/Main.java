@@ -29,7 +29,7 @@ public class Main{
         tablica1Wymiar nieparzyste=tab.getNieparzyste();
         wypiszKompaktowo(nieparzyste);
         Macierz m1 = new Macierz(4,4);
-        Macierz m2 = new Macierz(4,8);
+        Macierz m2 = new Macierz(4,4);
         m1.uzupelnijNaturalnymiLiczbamiLosowymi(100);
         m2.uzupelnijNaturalnymiLiczbamiLosowymi(100);
         wypiszKompaktowo(m1);
